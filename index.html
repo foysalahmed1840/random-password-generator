@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h4>Customize your new password</h4>
+      <div class="range-container">
+        <div>
+          <h5>Characters</h5>
+        </div>
+        <div class="range-box">
+          <input
+            type="range"
+            id="rangeInput"
+            class="range"
+            min="4"
+            max="32"
+            value="8"
+          />
+          <div id="rangeValue" class="range-value">8</div>
+        </div>
+      </div>
+      <!-- Checkbox -->
+      <div class="checkbox-container">
+        <div class="checkbox-box">
+          <input type="checkbox" id="upperCase" checked />
+          <label for="upperCase" class="checkbox-item"> <p>Uppercase</p></label>
+        </div>
+        <div class="checkbox-box2">
+          <input type="checkbox" id="lowerCase" />
+          <label for="lowerCase" class="checkbox-item2">
+            <p>LowerCase</p>
+          </label>
+        </div>
+        <div class="checkbox-box3">
+          <input type="checkbox" id="number" />
+          <label for="number" class="checkbox-item3">
+            <p>Number</p>
+          </label>
+        </div>
+      </div>
+      <!-- Checkbox -->
+      <!-- Password Box -->
+      <div class="password-container">
+        <h4>Generated password</h4>
+        <input type="text" class="password-input" id="passwordInput" readonly />
+        <div>
+          <button class="copy-password" id="copyPassword">Copy Password</button>
+          <button class="generate-password" id="generatePassword">
+            Generated password
+          </button>
+        </div>
+      </div>
+      <!-- Password Box -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
